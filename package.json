@@ -9,18 +9,34 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@radix-ui/react-dialog": "^1.1.4",
+    "@sanity/icons": "^3.5.7",
+    "@sanity/image-url": "^1.1.0",
+    "@sanity/vision": "^3.70.0",
+    "@stripe/stripe-js": "^5.5.0",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "lucide": "^0.471.0",
+    "lucide-react": "^0.471.1",
+    "next": "^14.2.22",
+    "next-sanity": "^9.8.39",
     "react": "^18",
     "react-dom": "^18",
-    "next": "14.2.2"
+    "react-is": "^19.0.0",
+    "sanity": "^3.70.0",
+    "styled-components": "^6.1.14",
+    "tailwind-merge": "^2.6.0",
+    "tailwindcss-animate": "^1.0.7",
+    "use-shopping-cart": "^3.2.0"
   },
   "devDependencies": {
-    "typescript": "^5",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.2",
     "postcss": "^8",
     "tailwindcss": "^3.4.1",
-    "eslint": "^8",
-    "eslint-config-next": "14.2.2"
+    "typescript": "^5"
   }
 }
