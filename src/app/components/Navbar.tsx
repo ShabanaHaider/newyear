@@ -1,6 +1,3 @@
-
-
-
 import Image from "next/image";
 import Link from "next/link";
 import React from 'react';
@@ -43,10 +40,11 @@ export default function Navbar() {
             <img src="/Vector (2).png" alt="Person" /></Link>
           </div>  
 
-          <div className="cursor pointer w-[28px] h-[28px]">
-            <Link href="/productcomparison">
-            <img src="/Vector (3).png" alt="Search Bar" /></Link>
-          </div>         
+           <div className="cursor pointer w-[28px] h-[28px]">
+            {/* <Link href="/category/[id]/page"> */}
+            <img src="/Vector (3).png" alt="Search Bar" />
+            {/* </Link> */}
+          </div>          
 
 
 
@@ -66,10 +64,4 @@ export default function Navbar() {
     </div>
   );
 }
-
-
-
-
-
-
 
