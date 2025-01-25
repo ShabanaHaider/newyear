@@ -439,25 +439,30 @@ import './globals.css';
 export default function Home() {
   return (
     
-      <div>
-        {/* Image Section */}
-        <div className="h-screen justify-center overflow-x-hidden items-center mt-0 w-[1440px] flex mx-auto relative">
-          <div className="relative w-full h-[718px]">
-            {/* Main Image */}
-            <Image
-              src="/scandinavian.png"
-              alt="Interior"
-              width={1440}
-              height={718}
-              className="absolute top-0 w-full object-cover"
-            />
+  <div>
+  {/* Image Section */}
+        
+  <div className="h-screen justify-center overflow-x-hidden items-center mt-0 w-[1440px] flex mx-auto relative">
+        
+         
+<div className="relative justify-cener lg:w-full h-[718px]">
+  {/* Main Image */}
+  <Image
+    src="/scandinavian.png"
+    alt="Interior"
+    layout="responsive" // Makes the image responsive
+    width={1500} // Original width for responsiveness calculations
+    height={718} // Original height for responsiveness calculations
+    className="w-full sm:w-[600px] md:w-[1000px] lg:w-full object-cover"
+  />
 
-            {/* Rectangle Image */}
+    {/* Rectangle Image  */}
+
             <div
-              className="absolute top-1/2 right-[5%] transform -translate-y-1/2 w-[643px] h-[443px]
+              className=" absolute top-1/2 right-[5%] transform -translate-y-1/2 w-[643px] h-[443px]
            bg-[#FFF3E3] flex flex-col justify-start items-start p-6"
             >
-              {/* Text Content */}
+              Text Content
               <p className="text-sm text-gray-500 mb-4">New Arrival</p>
 
               <h2 className="text-[#B88E2F] font-extrabold justify-center md:text-1xl text-3xl mb-4">
@@ -474,15 +479,16 @@ export default function Home() {
                   aliquid quibusdam alias, mollitia quisquam, perferendis vitae!
                 </li>
               </ul>
-              {/* Button Positioned on the Left */}
+              Button Positioned on the Left
               <Link href="/product">
                 <button className="mt-6 w-[222px] h-[50px] rounded-sm bg-[#B88E2F] text-white font-medium">
                   BUY NOW
                 </button>
               </Link>
-            </div>
+            </div>  
+
           </div>
-        </div>
+        </div>  
 
         {/* Parent Component */}
 
