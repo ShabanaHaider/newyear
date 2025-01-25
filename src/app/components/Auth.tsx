@@ -25,9 +25,7 @@ const Auth = () => {
         if(data.redirectUrl){
             router.push(data.redirectUrl)
         }
-
     }
-
     return (
         <div>
             <form onSubmit={handle_Req}>
