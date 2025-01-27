@@ -87,7 +87,7 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
       image { asset->{url} }
     }`,
     { categorySlug },
-    { cache: "no-store" } // Ensure fresh data is fetched
+    // { cache: "no-store" } // Ensure fresh data is fetched
   );
 
   // Handle no products found

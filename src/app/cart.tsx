@@ -37,6 +37,9 @@
 "use client";
 import React, { useContext } from "react";
 import { CartContext } from "./context"; // Ensure the correct path to your context file
+import Navbar from "./components/Navbar";
+
+
 
 const Cart = ({ productName }: { productName: string }) => {
   const { cart, del } = useContext(CartContext);
