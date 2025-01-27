@@ -53,7 +53,7 @@ function SearchBar({ products }: { products: Product[] }) {
         />
         <button
           type="submit"
-          className="px-4 py-2 bg-blue-500 text-white rounded-md"
+          className="px-4 py-2 bg-[#B88E2F] text-white rounded-md"
         >
           Search
         </button>

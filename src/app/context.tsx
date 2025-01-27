@@ -37,8 +37,3 @@ export const CartProvider = ({ children }: { children: ReactNode }) => {
 };
 
 
-
-
-
-
-
