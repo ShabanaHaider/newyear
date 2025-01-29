@@ -15,7 +15,7 @@ export default function RootLayout({
     <html lang="en">
       <body>
         {/* Navbar for large screens  */}
-        <div className="hidden lg:block">
+        <div className="hidden md:block lg:block">
           <Navbar />
         </div>
 

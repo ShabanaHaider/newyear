@@ -14,20 +14,20 @@ import { NextRequest, NextResponse } from "next/server";
 //     return NextResponse.json({body})
 // }
 
+
+
 export async function POST(req: NextRequest){
     const body = await req.json()
 
     try {
-        if(body.email == 'daniyal@gmail.com'){
+        if(body.email == 'shaidera@yahoo.com'){
             return NextResponse.json({
                 redirectUrl: '/admin'
             })
         }
         else{
             return NextResponse.json({
-                redirectUrl: '/'
-
-                // redirectUrl: '/customer'
+                redirectUrl: '/customer'
             })
         }
     }
@@ -37,4 +37,5 @@ export async function POST(req: NextRequest){
             message : err.message
         })
     }
+
 }

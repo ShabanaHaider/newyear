@@ -10,21 +10,23 @@ const MobileNavbar = () => {
         <SheetTrigger className="cursor-pointer">
           <Menu />
         </SheetTrigger>
-        <SheetContent>
-          <SheetHeader>
-            <SheetDescription className="bg-slate-600 text-bold text-2xl gap-1 p-4">
-              <div className="flex flex-row items-center justify-left gap-2 text-white">
+        <SheetContent>               
+        
+          <SheetHeader>   
+
+            <SheetDescription className="bg-slate-600 text-bold text-1xl gap-1 p-4">
+              <div className="flex flex-row items-center justify-left gap-1 text-white">
                 <Link href="/" passHref>
-                  <h2 className="cursor-pointer font-bold">Home</h2>
+                  <h2 className="cursor-pointer font-semibold">Home</h2>
                 </Link>
                 <Link href="/shop" passHref>
-                  <h2 className="cursor-pointer font-bold">Shop</h2>
+                  <h2 className="cursor-pointer font-semibold">Shop</h2>
                 </Link>
                 <Link href="/blog" passHref>
-                  <h2 className="cursor-pointer font-bold">Blog</h2>
+                  <h2 className="cursor-pointer font-semibold">Blog</h2>
                 </Link>
                 <Link href="/contact" passHref>
-                  <h2 className="cursor-pointer font-bold">Contact</h2>
+                  <h2 className="cursor-pointer font-semibold">Contact</h2>
                 </Link>
               </div>
             </SheetDescription>
