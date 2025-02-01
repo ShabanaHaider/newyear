@@ -573,7 +573,6 @@ import Link from "next/link";
 import { client } from "@/sanity/lib/client";
 import { urlFor } from "@/sanity/lib/image";
 import Image from "next/image";
-
 import SearchBar from "../components/SearchBar";
 
 // Define the Product type to match the response from Sanity
