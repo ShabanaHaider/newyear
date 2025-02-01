@@ -3,7 +3,7 @@
 // import Link from "next/link";
 // import { notFound } from "next/navigation";
 
-// export const fetchCache = "no-store"; // Disable caching globally for this page
+// export const fetchCache = "only-no-store"; // Disable caching globally for this page
 
 // interface TagsPageProps {
 //   params: {
