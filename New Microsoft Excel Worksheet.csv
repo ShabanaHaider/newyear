@@ -1,0 +1,12 @@
+,,,,,Day_5_Testing_Error_Handling_and_Backend_Integration_Refinement,,,,
+,,,,,B-Testing Report: (CSV Format):,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,Test Case Id,Test Case Description,Test Steps,Expected results,Actual Results,Status,Severity,Assigned to,Remarks
+1,TC001,Validate product listing page,Open product page and verify all products image and contents uploaded in Sanity,Products image and their content showing correctly after fetching,Products image and their content showing correctly after fetching,Passed,Low,-,No issues found
+2,TC002,Test API error handling,Disconnect API>refresh page,Show fallback UI with error message,Error message shown,Passed,Medium,-,No issues found
+3,TC003,Check Cart functionality,Add products to cart>verify cart contents,Cart updates with added products,Cart updates with added products ,Passed,Medium,-,Need to check further and improve
+4,TC004,Ensure responsiveness on mobile,Resize browser window>Check layout,Layout adjust properly to screen size,Responsive layout working as expected ,Passed,Low,-,Need improvement of image on image
