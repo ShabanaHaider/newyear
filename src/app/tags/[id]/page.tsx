@@ -125,7 +125,7 @@ import { urlFor } from "@/sanity/lib/image";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 
-export const fetchCache = "no-store"; // Disable caching globally for this page
+export const fetchCache = "only-no-store"; // Disable caching globally for this page
 
 interface TagsPageProps {
   params: {
