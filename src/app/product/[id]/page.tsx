@@ -328,6 +328,7 @@ import { notFound } from "next/navigation";
 import Shop from "@/app/shop";
 import CartProvider from "@/app/cartProvider";
 import Cart from "@/app/cart";
+import Image from "next/image";
 
 
 const DynamicBook = async ({ params }: { params: { id: string } }) => {
@@ -371,16 +372,16 @@ const DynamicBook = async ({ params }: { params: { id: string } }) => {
                <p>Home</p>
          </div>
              <div>
-               <img src="/tinyrightarrow.png" alt="rightarrow" />
+               <Image src="/tinyrightarrow.png" alt="rightarrow" />
              </div>
              <div>
                <p className="text-xs text-gray-500">Shop</p>
              </div>
             <div>
-               <img src="/tinyrightarrow.png" alt="rightarrow" />
+               <Image src="/tinyrightarrow.png" alt="rightarrow" />
              </div>
              <div>
-              <img src="/verticleline.png" alt="stick" />
+              <Image src="/verticleline.png" alt="stick" />
              </div>
             <div>
               <p className="text-normal text-black font-bold">
@@ -397,7 +398,7 @@ const DynamicBook = async ({ params }: { params: { id: string } }) => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div>
               {product.image && (
-                <img src={productImage} alt={product.productName} className="w-[350px] h-[300px] rounded-lg mb-6" />
+                <Image src={productImage} alt={product.productName} className="w-[350px] h-[300px] rounded-lg mb-6" />
               )}
 
              <div>

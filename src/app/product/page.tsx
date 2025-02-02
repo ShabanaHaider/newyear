@@ -674,7 +674,7 @@ export default async function Home() {
           <div key={product._id} className="product-card bg-white shadow-lg rounded-lg p-4">
             <Link href={`/product/${product._id}`}>
               <div>
-                <img
+                <Image
                   src={urlFor(product.image).width(350).url()}
                   alt={product.productName}
                   className="w-full h-auto rounded-lg mb-4"

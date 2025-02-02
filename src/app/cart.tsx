@@ -177,6 +177,7 @@
 "use client";
 import React, { useContext } from "react";
 import { CartContext } from "./context";
+import Image from "next/image";
 
 const Cart: React.FC = () => {
   const { cart, del } = useContext(CartContext);
@@ -192,8 +193,8 @@ const Cart: React.FC = () => {
           cart.map((val) => (
             <li key={val.id} className="flex items-center mb-2 border-b pb-2 border-gray-200">
 
-              
-              <img src={val.image} alt={val.name} className="w-16 h-16 mr-4" />
+
+              <Image src={val.image} alt={val.name} className="w-16 h-16 mr-4" />
               <span className="flex-1 text-gray-800">{val.name}</span>
               <span className="text-gray-600">${val.price}</span> {/* Show price */}
               <button

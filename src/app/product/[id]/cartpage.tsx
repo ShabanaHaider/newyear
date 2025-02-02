@@ -240,6 +240,7 @@
 "use client";
 import React, { useContext } from "react";
 import { CartContext } from "@/app/context"; // Ensure correct path
+import Image from "next/image";
 
 const CartPage = () => {
   const { cart, del } = useContext(CartContext); // Ensure this destructuring is correct

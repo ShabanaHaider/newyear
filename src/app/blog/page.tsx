@@ -63,13 +63,13 @@ export default function Shop() {
               {/* Small images in a row right below the main image */}
               <div className="flex justify-start gap-6 mt-4">
                 <div className="w-[80px] h-[24px]">
-                  <img src="/admin.png" alt="admin" />
+                  <Image src="/admin.png" alt="admin" />
                 </div>
                 <div className="w-[121px] h-[24px]">
-                  <img src="/date.png" alt="date" />
+                  <Image src="/date.png" alt="date" />
                 </div>
                 <div className="w-[78px] h-[24px]">
-                  <img src="/wood.png" alt="wood" />
+                  <Image src="/wood.png" alt="wood" />
                 </div>
               </div>
 
@@ -92,7 +92,7 @@ export default function Shop() {
                  
                 </p> 
 
-                <p> <img src="/readmore.png" alt="see more" />       </p>
+                <p> <Image src="/readmore.png" alt="see more" />       </p>
 
 
               </div>
@@ -119,13 +119,13 @@ export default function Shop() {
               {/* Small images in a row right below the main image */}
               <div className="flex justify-start gap-6 mt-4">
                 <div className="w-[80px] h-[24px]">
-                  <img src="/admin.png" alt="admin" />
+                  <Image src="/admin.png" alt="admin" />
                 </div>
                 <div className="w-[121px] h-[24px]">
-                  <img src="/date.png" alt="date" />
+                  <Image src="/date.png" alt="date" />
                 </div>
                 <div className="w-[78px] h-[24px]">
-                  <img src="/wood.png" alt="wood" />
+                  <Image src="/wood.png" alt="wood" />
                 </div>
               </div>
 
@@ -171,13 +171,13 @@ export default function Shop() {
               {/* Small images in a row right below the main image */}
               <div className="flex justify-start gap-6 mt-4">
                 <div className="w-[80px] h-[24px]">
-                  <img src="/admin.png" alt="admin" />
+                  <Image src="/admin.png" alt="admin" />
                 </div>
                 <div className="w-[121px] h-[24px]">
-                  <img src="/date.png" alt="date" />
+                  <Image src="/date.png" alt="date" />
                 </div>
                 <div className="w-[78px] h-[24px]">
-                  <img src="/wood.png" alt="wood" />
+                  <Image src="/wood.png" alt="wood" />
                 </div>
               </div>
 
@@ -200,7 +200,7 @@ export default function Shop() {
                  
                 </p> 
 
-                <p> <img src="/readmore.png" alt="see more" />       </p>
+                <p> <Image src="/readmore.png" alt="see more" />       </p>
 
 
                 <div className="flex justify-center gap-4">
