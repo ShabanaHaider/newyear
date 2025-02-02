@@ -265,7 +265,8 @@ const router = useRouter();
         <div className="flex ml-auto gap-[40px]">
           <div className="w-[28px] h-[28px]">
             <Link href="/logindetails">
-              <Image src="/Vector (2).png" alt="Person" />
+              <Image src="/Vector (2).png" alt="Person" width={28} 
+        height={28}  />
             </Link>
           </div>
 
@@ -274,13 +275,15 @@ const router = useRouter();
             className="cursor-pointer w-[28px] h-[28px]"
             onClick={() => router.push("/product")}
           >
-            <Image src="/Vector (3).png" alt="Search Bar" />
+            <Image src="/Vector (3).png" alt="Search Bar" width={28} 
+        height={28}  />
           </div>
 
           
           <div className="w-[28px] h-[28px]">
             <Link href="/shop/singleproductpage">
-              <Image src="/Vector (4).png" alt="Wishlist" />
+              <Image src="/Vector (4).png" alt="Wishlist" width={28} 
+        height={28}  />
             </Link>
           </div>
 
@@ -289,7 +292,8 @@ const router = useRouter();
             {/* <Link href="/product/[id]/addtocartpage">   */}        
  
             
-              <Image src="/Vector (5).png" alt="Cart" /> 
+              <Image src="/Vector (5).png" alt="Cart" width={28} 
+        height={28}  /> 
             {/* </Link>   */}
           </div>
         </div>
