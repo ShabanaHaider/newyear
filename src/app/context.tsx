@@ -35,21 +35,46 @@
 
 // corrected
 
+// "use client";
+// import { createContext, ReactNode } from "react";
+
+// interface Obj {
+//   id: number;
+//   name: string;
+//   image: string; // Ensure consistency across all files
+  
+  
+// }
+
+// interface CartContextType {
+//   cart: Obj[];
+//   add: (obj: Obj) => void;
+//   del: (id: number) => void;
+// }
+
+// export const CartContext = createContext<CartContextType>({
+//   cart: [],
+//   add: () => {},
+//   del: () => {},
+// });
+
+// improved
+
+
 "use client";
-import { createContext, ReactNode } from "react";
+import { createContext } from "react";
 
 interface Obj {
-  id: number;
+  id: string;   // <-- Change id to string (since Sanity productId is a string)
   name: string;
-  image: string; // Ensure consistency across all files
-  
-  
+  image: string;
+  price: number; // <-- Include price for better cart management
 }
 
 interface CartContextType {
   cart: Obj[];
   add: (obj: Obj) => void;
-  del: (id: number) => void;
+  del: (id: string) => void;
 }
 
 export const CartContext = createContext<CartContextType>({
@@ -57,5 +82,6 @@ export const CartContext = createContext<CartContextType>({
   add: () => {},
   del: () => {},
 });
+
 
 

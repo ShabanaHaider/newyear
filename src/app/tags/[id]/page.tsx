@@ -124,6 +124,7 @@ import { client } from "@/sanity/lib/client";
 import { urlFor } from "@/sanity/lib/image";
 import { notFound } from "next/navigation";
 import Link from "next/link";
+import Image from "next/image";
 
 export const fetchCache = "only-no-store"; // Disable caching globally for this page
 
@@ -166,7 +167,7 @@ export default async function CategoryPage({ params }: TagsPageProps) {
             className="product-card bg-white shadow-lg rounded-lg p-4"
           >
             <Link href={`/product/${product._id}`}>
-              <img
+              <Image
                 src={urlFor(product.image).width(350).url()}
                 alt={product.productName}
                 className="w-full h-auto rounded-lg mb-4"

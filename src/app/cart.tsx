@@ -134,6 +134,46 @@
 
 // corrected
 
+// "use client";
+// import React, { useContext } from "react";
+// import { CartContext } from "./context";
+
+// const Cart: React.FC = () => {
+//   const { cart, del } = useContext(CartContext);
+
+//   return (
+//     <div className="ml-10">
+//       <h1 className="text-left font-bold text-2xl ml-10 mb-4">Cart</h1>
+//       <p className="text-lg">
+//         Total Products: <span className="font-bold">{cart.length}</span>
+//       </p>
+//       <ol className="mt-4">
+//         {cart.length > 0 ? (
+//           cart.map((val) => (
+//             <li key={val.id} className="flex items-center mb-2 border-b pb-2 border-gray-200">
+//               <img src={val.image} alt={val.name} className="w-16 h-16 mr-4" />
+//               <span className="flex-1 text-gray-800">{val.name}</span>
+//               <button
+//                 className="px-6 py-4 bg-[#B88E2F] text-white rounded"
+//                 onClick={() => del(val.id)}
+//               >
+//                 Delete from Cart
+//               </button>
+//             </li>
+//           ))
+//         ) : (
+//           <p className="text-gray-600 mt-4">No items in the cart</p>
+//         )}
+//       </ol>
+//     </div>
+//   );
+// };
+
+// export default Cart;
+
+
+// improved
+
 "use client";
 import React, { useContext } from "react";
 import { CartContext } from "./context";
@@ -151,10 +191,13 @@ const Cart: React.FC = () => {
         {cart.length > 0 ? (
           cart.map((val) => (
             <li key={val.id} className="flex items-center mb-2 border-b pb-2 border-gray-200">
+
+              
               <img src={val.image} alt={val.name} className="w-16 h-16 mr-4" />
               <span className="flex-1 text-gray-800">{val.name}</span>
+              <span className="text-gray-600">${val.price}</span> {/* Show price */}
               <button
-                className="px-6 py-4 bg-[#B88E2F] text-white rounded"
+                className="px-6 py-4 bg-[#B88E2F] text-white rounded ml-4"
                 onClick={() => del(val.id)}
               >
                 Delete from Cart
@@ -170,5 +213,6 @@ const Cart: React.FC = () => {
 };
 
 export default Cart;
+
 
 

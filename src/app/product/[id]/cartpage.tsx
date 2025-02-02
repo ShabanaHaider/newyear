@@ -181,60 +181,84 @@
 // export default CartPage;
 
 
-// midnight
+// corrected
 
-// app/product/[id]/cartpage.tsx
+// "use client";
+// import React, { useContext } from "react";
+// import { CartContext } from "@/app/context";
+// import { useRouter } from "next/navigation";
+
+// const CartPage = ({ params }: { params: { id: string } }) => {
+//   const { cart, del } = useContext(CartContext);
+//   const router = useRouter();
+
+//   return (
+//     <div className="ml-10">
+//       <h1 className="text-left font-bold text-2xl ml-10 mb-4">Cart Page</h1>
+//       <p className="text-lg">
+//         Total Products: <span className="font-bold">{cart.length}</span>
+//       </p>
+//       <ol className="mt-4">
+//         {cart.length > 0 ? (
+//           cart.map((val) => (
+//             <li
+//               key={val.id}
+//               className="flex items-center mb-2 border-b pb-2 border-gray-200"
+//             >
+//               <img src={val.image} alt={val.name} className="w-16 h-16 mr-4" />
+//               <span className="flex-1 text-gray-800">{val.name}</span>
+//               <button
+//                 className="px-6 py-4 bg-[#B88E2F] text-white rounded"
+//                 onClick={() => del(val.id)}
+//               >
+//                 Delete from Cart
+//               </button>
+//             </li>
+//           ))
+//         ) : (
+//           <p className="text-gray-600 mt-4">No items in the cart</p>
+//         )}
+//       </ol>
+//       <div className="mt-6">
+//         <button
+//           className="px-6 py-4 bg-[#B88E2F] text-white rounded"
+//           onClick={() => router.push(`/checkout/${params.id}`)}
+//         >
+//           Checkout
+//         </button>
+//       </div>
+//     </div>
+//   );
+// };
+
+// export default CartPage;
+
+
+// improved
+
+
 "use client";
 import React, { useContext } from "react";
-import { CartContext } from "@/app/context";
-import { useRouter } from "next/navigation";
+import { CartContext } from "@/app/context"; // Ensure correct path
 
-const CartPage = ({ params }: { params: { id: string } }) => {
-  const { cart, del } = useContext(CartContext);
-  const router = useRouter();
+const CartPage = () => {
+  const { cart, del } = useContext(CartContext); // Ensure this destructuring is correct
 
   return (
-    <div className="ml-10">
-      <h1 className="text-left font-bold text-2xl ml-10 mb-4">Cart Page</h1>
-      <p className="text-lg">
-        Total Products: <span className="font-bold">{cart.length}</span>
-      </p>
-      <ol className="mt-4">
-        {cart.length > 0 ? (
-          cart.map((val) => (
-            <li
-              key={val.id}
-              className="flex items-center mb-2 border-b pb-2 border-gray-200"
-            >
-              <img src={val.image} alt={val.name} className="w-16 h-16 mr-4" />
-              <span className="flex-1 text-gray-800">{val.name}</span>
-              <button
-                className="px-6 py-4 bg-[#B88E2F] text-white rounded"
-                onClick={() => del(val.id)}
-              >
-                Delete from Cart
-              </button>
-            </li>
-          ))
-        ) : (
-          <p className="text-gray-600 mt-4">No items in the cart</p>
-        )}
-      </ol>
-      <div className="mt-6">
-        <button
-          className="px-6 py-4 bg-[#B88E2F] text-white rounded"
-          onClick={() => router.push(`/checkout/${params.id}`)}
-        >
-          Checkout
-        </button>
-      </div>
+    <div>
+      <h1>Cart Page</h1>
+      <ul>
+        {cart.map((item) => (
+          <li key={item.id}>
+            {item.name} - <button onClick={() => del(item.id)}>Remove</button>
+          </li>
+        ))}
+      </ul>
     </div>
   );
 };
 
 export default CartPage;
-
-
 
 
 

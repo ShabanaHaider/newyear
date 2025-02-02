@@ -101,6 +101,37 @@
 
 // corrected
 
+// "use client";
+// import React, { useContext } from "react";
+// import { CartContext } from "./context";
+
+// interface ShopProps {
+//   productName: string;
+//   productImage: string;
+// }
+
+// const Shop: React.FC<ShopProps> = ({ productName, productImage, }) => {
+//   const { add } = useContext(CartContext); // Ensure `add` is accessed properly
+
+//   return (
+//     <div className="ml-10">
+//       <h1 className="text-left font-bold text-2xl ml-10 mb-4">Buy Now</h1>
+//       <button
+//         className="px-6 py-4 bg-[#B88E2F] text-white rounded"
+//         onClick={() => add({ name: productName, id: Date.now(), image: productImage })}
+//       >
+//         Add to Cart
+//       </button>
+//     </div>
+//   );
+// };
+
+// export default Shop;
+
+
+
+// improved
+
 "use client";
 import React, { useContext } from "react";
 import { CartContext } from "./context";
@@ -108,17 +139,19 @@ import { CartContext } from "./context";
 interface ShopProps {
   productName: string;
   productImage: string;
+  productId: string;  // <-- Add productId
+  productPrice: number; // <-- Add productPrice
 }
 
-const Shop: React.FC<ShopProps> = ({ productName, productImage, }) => {
-  const { add } = useContext(CartContext); // Ensure `add` is accessed properly
+const Shop: React.FC<ShopProps> = ({ productName, productImage, productId, productPrice }) => {
+  const { add } = useContext(CartContext);
 
   return (
     <div className="ml-10">
       <h1 className="text-left font-bold text-2xl ml-10 mb-4">Buy Now</h1>
       <button
         className="px-6 py-4 bg-[#B88E2F] text-white rounded"
-        onClick={() => add({ name: productName, id: Date.now(), image: productImage })}
+        onClick={() => add({ id: productId, name: productName, image: productImage, price: productPrice })}
       >
         Add to Cart
       </button>
@@ -127,4 +160,5 @@ const Shop: React.FC<ShopProps> = ({ productName, productImage, }) => {
 };
 
 export default Shop;
+
 
