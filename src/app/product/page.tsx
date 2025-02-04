@@ -120,7 +120,7 @@ export default async function Home() {
                     <div key={index}>
                       <p>Width: {dimension.width} inches</p>
                       <p>Height: {dimension.height} inches</p>
-                      <p>Depth: {dimension.length} inches</p>
+                      <p>Length: {dimension.length} inches</p>
                     </div>
                   ))}
                 </div>
