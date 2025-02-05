@@ -1,4 +1,6 @@
-export default {
+
+const invoiceSchema = {
+
     name: 'invoice',
     title: 'Invoice',
     type: 'document',
@@ -105,4 +107,6 @@ export default {
       }
     ]
   }
+
+  export default invoiceSchema 
   
