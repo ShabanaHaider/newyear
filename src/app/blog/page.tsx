@@ -64,13 +64,13 @@ export default function Shop() {
               {/* Small images in a row right below the main image */}
               <div className="flex justify-start gap-6 mt-4">
                 <div className="w-[80px] h-[24px]">
-                  <Image src="/admin.png" alt="admin" width={24} height={24} />
+                  <Image src="/admin.png" alt="admin" width={78} height={24} />
                 </div>
                 <div className="w-[121px] h-[24px]">
-                  <Image src="/date.png" alt="date" width={24} height={24} />
+                  <Image src="/date.png" alt="date" width={78} height={24} />
                 </div>
                 <div className="w-[78px] h-[24px]">
-                  <Image src="/wood.png" alt="wood" width={24} height={24} />
+                  <Image src="/wood.png" alt="wood" width={78} height={24} />
                 </div>
               </div>
 
@@ -113,18 +113,21 @@ export default function Shop() {
     className="cursor-pointer"
   />
 
+  
+
   {/* Small images in a row right below the main image */}
   <div className="flex justify-start gap-6 mt-4">
-    <div className="w-[80px] h-[24px]">
-      <img src="/admin.png" alt="admin" />
-    </div>
-    <div className="w-[121px] h-[24px]">
-      <img src="/date.png" alt="date" />
-    </div>
-    <div className="w-[78px] h-[24px]">
-      <img src="/wood.png" alt="wood" />
-    </div>
-  </div>
+                <div className="w-[80px] h-[24px]">
+                  <Image src="/admin.png" alt="admin" width={78} height={24} />
+                </div>
+                <div className="w-[121px] h-[24px]">
+                  <Image src="/date.png" alt="date" width={78} height={24} />
+                </div>
+                <div className="w-[78px] h-[24px]">
+                  <Image src="/wood.png" alt="wood" width={78} height={24} />
+                </div>
+              </div>
+
 
   {/* Heading below the small images */}
   <div className="flex flex-col gap-2 mt-2 text-black justify-start text-2xl">
@@ -165,18 +168,19 @@ export default function Shop() {
     className="cursor-pointer"
   />
 
-  {/* Small images in a row right below the main image */}
-  <div className="flex justify-start gap-6 mt-4">
-    <div className="w-[80px] h-[24px]">
-      <img src="/admin.png" alt="admin" />
-    </div>
-    <div className="w-[121px] h-[24px]">
-      <img src="/date.png" alt="date" />
-    </div>
-    <div className="w-[78px] h-[24px]">
-      <img src="/wood.png" alt="wood" />
-    </div>
-  </div>
+
+<div className="flex justify-start gap-6 mt-4">
+                <div className="w-[80px] h-[24px]">
+                  <Image src="/admin.png" alt="admin" width={78} height={24} />
+                </div>
+                <div className="w-[121px] h-[24px]">
+                  <Image src="/date.png" alt="date" width={78} height={24} />
+                </div>
+                <div className="w-[78px] h-[24px]">
+                  <Image src="/wood.png" alt="wood" width={78} height={24} />
+                </div>
+              </div>
+
 
   {/* Heading below the small images */}
   <div className="flex flex-col gap-2 mt-2 text-black justify-start text-2xl">
@@ -205,10 +209,7 @@ export default function Shop() {
             <Image src="/number2.png" alt="2" width={60} height={60} />
             <Image src="/number3.png" alt="3" width={60} height={60} />
             <Image src="/next.png" alt="next" width={98} height={60} />
-          </div>
-
-
-          
+          </div>       
 
 
   </div>
@@ -231,7 +232,7 @@ export default function Shop() {
 <p className="mt-3 ml-4 font-semibold ">Categories</p>
 
 
-</div>         
+</div>     
 
 
 
@@ -311,9 +312,6 @@ export default function Shop() {
 <p className=" text-left text-xs text-gray-500">03 Aug 2022</p>
 </div>
 </div>
-
-
-
 </div>
 </div>
 
@@ -349,7 +347,6 @@ export default function Shop() {
 </div>
 </div>
 </div>
-
 </div>
 
 
