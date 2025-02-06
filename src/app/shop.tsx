@@ -227,7 +227,7 @@ const Shop: React.FC<ShopProps> = ({ productName, productImage, productId, produ
         onClick={handleBuyNow} // ✅ Buy Now functionality
       >
         Buy Now
-      </button>
+      </button> 
       <button
         className="px-6 py-4 ml-4 bg-[#B88E2F] text-white rounded"
         onClick={handleAddToCart}

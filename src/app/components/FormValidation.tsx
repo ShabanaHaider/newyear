@@ -13,7 +13,7 @@ const FormValidation = () => {
 
 
     return (
-        <div className="flex items-center justify-center ml-56 px-6 py-4 w-[1440px] bg-[#dbb763]">
+        <div className="flex items-center justify-center ml-48 px-6 py-4 w-[1440px] bg-[#dbb763]">
             {/* className="px-6 py-4 bg-[#B88E2F] text-white rounded mt-6 w-full" */}
 
 

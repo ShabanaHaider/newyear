@@ -264,7 +264,7 @@ const router = useRouter();
         {/* Vector Icons */}
         <div className="flex ml-auto gap-[40px]">
           <div className="w-[28px] h-[28px]">
-            <Link href="/logindetails">
+            <Link href="/admin">
               <Image src="/Vector (2).png" alt="Person" width={28} 
         height={28}  />
             </Link>
@@ -289,12 +289,11 @@ const router = useRouter();
 
           {/* Cart Icon */}
           <div className="cursor-pointer w-[28px] h-[28px]">
-            {/* <Link href="/product/[id]/addtocartpage">   */}        
- 
-            
+             {/* <Link href="/product/[id]/cartdetails/page">   */}
+             <Link href="/cart">            
               <Image src="/Vector (5).png" alt="Cart" width={28} 
         height={28}  /> 
-            {/* </Link>   */}
+             </Link>    
           </div>
         </div>
       </div>
