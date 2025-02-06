@@ -148,7 +148,7 @@ export default function Shop() {
      
     </p> 
 
-    <p> <img src="/readmore.png" alt="see more" />       </p>
+    <p> <img src="/readmore.png" alt="see more" width={60} height={20}/>       </p>
 
 
   </div>
@@ -201,7 +201,7 @@ export default function Shop() {
      
     </p> 
 
-    <p> <img src="/readmore.png" alt="see more" />       </p>
+    <p> <img src="/readmore.png" alt="see more" width={60} height={20} />       </p>
 
 
     <div className="flex justify-center gap-4">
