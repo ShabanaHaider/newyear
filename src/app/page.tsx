@@ -6,9 +6,7 @@ import ParentComponentproducts from "./components/ParentComponentproducts";
 import Link from "next/link";
 // import Shop from "./shop";
 // import Cart from "./app/cart";
-
-
-import './globals.css';
+// import './globals.css';
 
 export default function Home() {
   return (
