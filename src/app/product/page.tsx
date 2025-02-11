@@ -104,8 +104,8 @@ export default async function Home() {
                 <h2 className="text-xl font-semibold text-gray-800 mb-2">{product.productName}</h2>
                 <p className="text-gray-600">Product Description: {product.productDescription}</p>
                 <p className="text-gray-600">Product ID: {product.productId}</p>
-                <p className="text-lg font-bold text-gray-800">Price: Pkr{product.price}</p>
-                <p className="text-sm text-gray-500 line-through">Full Price: Pkr{product.fullPrice}</p>
+                <p className="text-lg font-bold text-gray-800">Price: ${product.price}</p>
+                <p className="text-sm text-gray-500 line-through">Full Price: ${product.fullPrice}</p>
                 <p className="text-sm text-gray-500">Color: {product.color}</p>
                 <p className="text-sm text-gray-500">Tags: {product.tags?.join(", ")}</p>
                 <p className="text-sm text-gray-500">Category: {product.category}</p>

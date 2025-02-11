@@ -485,8 +485,8 @@ const DynamicBook = async ({ params }: { params: { id: string } }) => {
             <div className="mt-4 space-y-2">
               <p><strong>Product Id:</strong> {product.productId}</p>
               <p><strong>Slug:</strong> {product.slug.current}</p>
-              <p><strong>Price:</strong> Pkr {product.price}</p>
-              <p className="line-through text-gray-500"><strong>Full Price:</strong> Pkr {product.fullPrice}</p>
+              <p><strong>Price:</strong> $ {product.price}</p>
+              <p className="line-through text-gray-500"><strong>Full Price:</strong> $ {product.fullPrice}</p>
               <p><strong>Color:</strong> {product.color}</p>
               <p><strong>Tags:</strong> {product.tags.join(", ")}</p>
               <p><strong>Quantity:</strong> {product.quantity} in stock</p>
