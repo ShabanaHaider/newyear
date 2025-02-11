@@ -203,7 +203,7 @@ const CheckoutPage: React.FC = () => {
 
   const handleCheckout = () => {
     alert("Proceeding to payment...");
-    router.push("/payment");
+    router.push("/stripepayment");
   };
 
   return (

@@ -122,7 +122,7 @@ const Cart: React.FC = () => {
 
   return (
     <div className="ml-10">
-      <h1 className="text-2xl mb-4">Cart</h1>
+      <h1 className="text-2xl font-semibold mb-4">CART</h1>
       <p>
         Total Products: <strong>{cart.length}</strong>
       </p>
@@ -139,9 +139,9 @@ const Cart: React.FC = () => {
                 className="mr-4"
               />
               <span className="flex-1">{item.name}</span>
-              <span>${item.price}</span>
+              <span className="mr-4">${item.price}</span>
               <button
-                className="px-4 py-2 bg-[#B88E2F] text-white rounded ml-4"
+                 className="px-2 py-2 bg-[#B88E2F] text-white rounded mr-72"                
                 onClick={() => del(item.id)}
               >
                 Delete
