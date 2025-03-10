@@ -5,12 +5,12 @@ const invoiceSchema = {
     title: 'Invoice',
     type: 'document',
     fields: [
-      {
-        name: 'orderId',
-        title: 'Order ID',
-        type: 'string',
-        // validation: Rule => Rule.required().min(1).max(100)
-      },
+      // {
+      //   name: 'orderId',
+      //   title: 'Order ID',
+      //   type: 'string',
+      //   // validation: Rule => Rule.required().min(1).max(100)
+      // },
   
       {
         name: 'productId',
@@ -20,12 +20,12 @@ const invoiceSchema = {
       },       
 
 
-      {
-        name: 'customerId',
-        title: 'Customer ID',
-        type: 'string',
+      // {
+      //   name: 'customerId',
+      //   title: 'Customer ID',
+      //   type: 'string',
        
-      },
+      // },
 
 
       {

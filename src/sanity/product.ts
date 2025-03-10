@@ -119,17 +119,38 @@
   // };
 
 
+  
+
+
   const productSchema = {
     name: 'product',
     title: 'Product',
     type: 'document',
     fields: [
+
+
+
+      // {
+      //   name: 'productId',
+      //   title: 'Product Id',
+      //   type: 'string',
+      //   // validation: Rule => Rule.required().min(1).max(200)
+      // },
+
+
       {
-        name: 'productId',
-        title: 'Product Id',
-        type: 'string',
-        // validation: Rule => Rule.required().min(1).max(200)
+        name: "productId",
+        title: "Product ID",
+        type: "string",
+                validation: (Rule: any) => Rule.required().unique(),
+
       },
+
+
+
+
+
+
       {
         name: 'productName',
         title: 'Product Name',
